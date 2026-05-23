@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Marlan A. Grande</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Craftivo
+  * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
+  * Updated: Oct 04 2025 with Bootstrap v5.3.8
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Marlan</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+ <section id="hero" class="hero section dark-background" style="position: relative; overflow: hidden;">
+
+  <img src="assets/img/profile/back-bg.jpg" alt="" data-aos="fade-in">
+
+  <div class="cherry-blossoms">
+    <div class="petal p1"></div><div class="petal p2"></div><div class="petal p3"></div><div class="petal p4"></div><div class="petal p5"></div>
+    <div class="petal p6"></div><div class="petal p7"></div><div class="petal p8"></div><div class="petal p9"></div><div class="petal p10"></div>
+    <div class="petal p11"></div><div class="petal p12"></div><div class="petal p13"></div><div class="petal p14"></div><div class="petal p15"></div>
+    <div class="petal p16"></div><div class="petal p17"></div><div class="petal p18"></div><div class="petal p19"></div><div class="petal p20"></div>
+    <div class="petal p21"></div><div class="petal p22"></div><div class="petal p23"></div><div class="petal p24"></div><div class="petal p25"></div>
+  </div>
+  
+  <style>
+    /* Gagawin nating transparent na overlay ang container ng mga dahon */
+    .cherry-blossoms {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; /* Mas mataas sa background image, mas mababa sa text */
+      pointer-events: none;
+    }
+
+    /* Hugis at kulay ng bawat petal */
+    .petal {
+      position: absolute;
+      background: linear-gradient(135deg, #ffb7c5, #ff9eb5);
+      border-radius: 150% 0 150% 150%;
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    /* Pag-spread ng 25 petals sa kabuuan ng screen */
+    .p1  { left: 5%;  width: 14px; height: 11px; animation: fall 7s infinite linear; animation-delay: 0s; }
+    .p2  { left: 12%; width: 10px; height: 8px;  animation: fall 11s infinite linear; animation-delay: 1.5s; }
+    .p3  { left: 18%; width: 16px; height: 13px; animation: fall 9s infinite linear; animation-delay: 0.5s; }
+    .p4  { left: 23%; width: 12px; height: 9px;  animation: fall 13s infinite linear; animation-delay: 4s; }
+    .p5  { left: 28%; width: 15px; height: 12px; animation: fall 8s infinite linear; animation-delay: 2s; }
+    .p6  { left: 35%; width: 9px;  height: 7px;  animation: fall 12s infinite linear; animation-delay: 0.2s; }
+    .p7  { left: 42%; width: 18px; height: 15px; animation: fall 10s infinite linear; animation-delay: 3.5s; }
+    .p8  { left: 48%; width: 13px; height: 10px; animation: fall 6s infinite linear; animation-delay: 1s; }
+    .p9  { left: 53%; width: 11px; height: 8px;  animation: fall 14s infinite linear; animation-delay: 5s; }
+    .p10 { left: 59%; width: 16px; height: 12px; animation: fall 8s infinite linear; animation-delay: 2.3s; }
+    .p11 { left: 64%; width: 14px; height: 11px; animation: fall 9s infinite linear; animation-delay: 0.7s; }
+    .p12 { left: 70%; width: 10px; height: 8px;  animation: fall 11s infinite linear; animation-delay: 4.2s; }
+    .p13 { left: 75%; width: 17px; height: 14px; animation: fall 7s infinite linear; animation-delay: 1.8s; }
+    .p14 { left: 81%; width: 12px; height: 9px;  animation: fall 10s infinite linear; animation-delay: 3s; }
+    .p15 { left: 87%; width: 15px; height: 12px; animation: fall 13s infinite linear; animation-delay: 0.5s; }
+    .p16 { left: 93%; width: 11px; height: 9px;  animation: fall 9s infinite linear; animation-delay: 2.7s; }
+    .p17 { left: 8%;  width: 16px; height: 13px; animation: fall 10s infinite linear; animation-delay: 5.5s; }
+    .p18 { left: 22%; width: 13px; height: 10px; animation: fall 8s infinite linear; animation-delay: 6s; }
+    .p19 { left: 37%; width: 15px; height: 12px; animation: fall 11s infinite linear; animation-delay: 1.2s; }
+    .p20 { left: 50%; width: 10px; height: 8px;  animation: fall 7s infinite linear; animation-delay: 4.8s; }
+    .p21 { left: 67%; width: 17px; height: 14px; animation: fall 12s infinite linear; animation-delay: 0.1s; }
+    .p22 { left: 78%; width: 12px; height: 9px;  animation: fall 9s infinite linear; animation-delay: 3.3s; }
+    .p23 { left: 84%; width: 14px; height: 11px; animation: fall 6s infinite linear; animation-delay: 2.1s; }
+    .p24 { left: 95%; width: 16px; height: 13px; animation: fall 11s infinite linear; animation-delay: 1.9s; }
+    .p25 { left: 45%; width: 13px; height: 10px; animation: fall 13s infinite linear; animation-delay: 6.5s; }
+
+    /* Animation ng Paghulog pababa ng screen */
+    @keyframes fall {
+      0% {
+        top: -5%;
+        transform: translateX(0) rotate(0deg);
+        opacity: 0;
+      }
+      10% { opacity: 0.85; }
+      90% { opacity: 0.85; }
+      100% {
+        top: 105%;
+        transform: translateX(100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Nilagyan ng mataas na z-index ang text area para laging nasa ibabaw */
+    #hero .container {
+      position: relative !important;
+      z-index: 3 !important;
+    }
+  </style>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2>Hi, I'm Marlan A. Grande</h2>
+        <p>I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+        <div class="social-links">
+          <a href="https://github.com/Marlan09"><i class="bi bi-github"></i></a>
+          <a href="https://www.facebook.com/marlan.Grande"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/ur.fri_x?igsh=MW15ZnZyb3hlNzI1&utm_source=qr"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">About Me</span>
+        <h2>About Me</h2>
+        <p>I’m a dedicated and hardworking Computer Science student who enjoys learning new technologies and creating innovative projects. I am passionate about programming, problem-solving, and continuously improving my skills to become a successful IT professional.
+</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-avatar">
+                  <img src="assets/img/profile/pro-bg.jpg" class="img-fluid" alt="">
+                  <div class="status-indicator"></div>
+                </div>
+                <h3>Marlan A. Grande</h3>
+                <span class="role">Full Stack Developer</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <h4>13</h4>
+                  <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                  <h4>2</h4>
+                  <p>Years</p>
+                </div>
+                <div class="stat-item">
+                  <h4>3</h4>
+                  <p>Awards</p>
+                </div>
+              </div>
+
+              <div class="profile-actions">
+                <a href="#" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
+                <a href="#" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+              </div>
+
+              <div class="social-connect">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="content-wrapper">
+              <div class="bio-section">
+                <div class="section-tag">About Me</div>
+                <h2>Transforming Ideas into Digital Reality</h2>
+                <p>Passionate about transforming ideas into creative and functional digital solutions through technology and innovation.</p>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
+                  <i class="bi bi-briefcase"></i>
+                  <div class="detail-content">
+                    <span>Year</span>
+                    <strong>2nd Years</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-mortarboard"></i>
+                  <div class="detail-content">
+                    <span>Degree</span>
+                    <strong>Computer Science</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
+                  <i class="bi bi-geo-alt"></i>
+                  <div class="detail-content">
+                    <span>Address</span>
+                    <strong>Mercedes, Camarines Norte</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-envelope"></i>
+                  <div class="detail-content">
+                    <span>Email</span>
+                    <strong>marlangran220@gmail.com</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
+                  <i class="bi bi-phone"></i>
+                  <div class="detail-content">
+                    <span>Phone</span>
+                    <strong>+63 9929159756</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-calendar-check"></i>
+                  <div class="detail-content">
+                    <span>Availability</span>
+                    <strong>Open to Work</strong>
+                  </div>
+                </div>
+              </div>
+
+            
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Resume</span>
+        <h2>Resume</h2>
+        <p>Dedicated and motivated Computer Science student with a passion for technology, programming, and problem-solving. Eager to apply my skills, learn new technologies, and gain experience in software and mobile development.
+</p>
+      </div><!-- End Section Title -->
+
+   <div class="container" data-aos="fade-up" data-aos-delay="100"> 
+  <div class="row gy-5">
+    
+    <div class="col-lg-6">
+      
+      <div class="experience-section mb-5">
+        <div class="section-header" data-aos="fade-right" data-aos-delay="200">
+          <div class="header-content">
+            <span class="section-badge">Experience</span>
+            <h2 class="mb-4">Professional Journey</h2>
+          </div>
+        </div>
+
+        <div class="experience-cards">
+          <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <div class="company-logo">
+                <i class="bi bi-cup-straw text-primary fs-3"></i>
+              </div>
+              <div class="period-badge">1 Year</div>
+            </div>
+            <div class="card-body mt-3">
+              <h3 class="h5 fw-bold">Service Crew</h3>
+              <p class="company-name mb-2">Basteakoy Milktea Shop</p>
+              <p class="description">1 year experience in customer service, drink preparation, cash handling, and assisting daily shop operations in a fast-paced environment.</p>
+              <div class="skills-tags mt-3">
+                <span class="skill-tag">Customer Service</span>
+                <span class="skill-tag">Cash Handling</span>
+                <span class="skill-tag">Food & Beverage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="certifications-section">
+        <div class="section-header" data-aos="fade-right" data-aos-delay="200">
+          <div class="header-content">
+            <span class="section-badge">Certifications</span>
+            <h2 class="mb-4">Credentials & Seminars</h2>
+          </div>
+        </div>
+
+        <div class="certifications-list d-flex flex-column gap-4 ps-2">
+          
+          <div class="cert-item-clean" data-aos="zoom-in" data-aos-delay="300">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <span class="badge bg-secondary small">2026</span>
+                  <span class="text-primary small fw-bold"><i class="bi bi-patch-check"></i> Seminar</span>
+                </div>
+                <h3 class="h5 fw-bold mb-1">Navigating Research with AI Synergy</h3>
+                <p class="company-name text-muted mb-0">Naga College Foundation</p>
+                <small class="text-secondary">April 21-23, 2026</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-item-clean" data-aos="zoom-in" data-aos-delay="350">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <span class="badge bg-secondary small">2025</span>
+                  <span class="text-primary small fw-bold"><i class="bi bi-patch-check"></i> Training</span>
+                </div>
+                <h3 class="h5 fw-bold mb-1">From Scroll to Skill</h3>
+                <p class="company-name text-muted mb-0">Our Lady of Lourdes College Foundation</p>
+                <small class="text-secondary">March 14, 2025</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-item-clean" data-aos="zoom-in" data-aos-delay="400">
+            <div class="d-flex justify-content-between align-items-start">
+              <div>
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <span class="badge bg-secondary small">2023</span>
+                  <span class="text-primary small fw-bold"><i class="bi bi-patch-check"></i> Program</span>
+                </div>
+                <h3 class="h5 fw-bold mb-1">Work Immersion Certificate</h3>
+                <p class="company-name text-muted mb-0">Brgy Sanroque, MCN</p>
+                <small class="text-secondary">Academic Year 2023</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-lg-6">
+      <div class="education-section">
+        <div class="section-header" data-aos="fade-left" data-aos-delay="200">
+          <div class="header-content">
+            <span class="section-badge">Education</span>
+            <h2 class="mb-4">Academic Background</h2>
+          </div>
+        </div>
+
+        <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
+          <div class="timeline-track position-relative ps-4 border-start">
+            
+            <div class="timeline-item mb-4 position-relative">
+              <div class="timeline-marker position-absolute start-0 translate-middle bg-white text-primary">
+                <i class="bi bi-mortarboard-fill fs-5"></i>
+              </div>
+              <div class="timeline-content ms-3">
+                <div class="education-meta d-flex gap-2 align-items-center mb-1">
+                  <span class="badge bg-dark">2024 - 2026</span>
+                  <span class="text-muted small fw-bold text-uppercase">College</span>
+                </div>
+                <h4 class="h5 fw-bold mb-1">Bachelor of Science in Computer Science</h4>
+                <p class="institution text-primary mb-1">Mabini College Inc.</p>
+                <p class="description small text-secondary">Currently Enrolled — Second Year</p>
+              </div>
+            </div>
+
+            <div class="timeline-item mb-4 position-relative">
+              <div class="timeline-marker position-absolute start-0 translate-middle bg-white text-muted">
+                <i class="bi bi-book fs-5"></i>
+              </div>
+              <div class="timeline-content ms-3">
+                <div class="education-meta d-flex gap-2 align-items-center mb-1">
+                  <span class="badge bg-dark">2023 - 2024</span>
+                  <span class="text-muted small fw-bold text-uppercase">Senior High</span>
+                </div>
+                <h4 class="h5 fw-bold mb-1">Humanities and Social Sciences (HUMSS)</h4>
+                <p class="institution text-secondary mb-0">Northhills College of Asia Inc.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item position-relative">
+              <div class="timeline-marker position-absolute start-0 translate-middle bg-white text-muted">
+                <i class="bi bi-building fs-5"></i>
+              </div>
+              <div class="timeline-content ms-3">
+                <div class="education-meta d-flex gap-2 align-items-center mb-1">
+                  <span class="badge bg-dark">2021 - 2022</span>
+                  <span class="text-muted small fw-bold text-uppercase">High School</span>
+                </div>
+                <h4 class="h5 fw-bold mb-1">High School Graduate</h4>
+                <p class="institution text-secondary mb-0">San Roque National High School</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Portfolio</span>
+        <h2>Portfolio</h2>
+        <p>I’m a Computer Science student passionate about technology, programming, and problem-solving. I enjoy developing creative and user-friendly projects while continuously improving my skills in software and mobile development.
+</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All Work</li>
+            <li data-filter=".filter-creative">Premid</li>
+            <li data-filter=".filter-digital">Midterm</li>
+            <li data-filter=".filter-strategy">Prefinal</li>
+            <li data-filter=".filter-development">Final</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/Shape and Form.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Shape and Form</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/Shape and Form.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 101</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/shape and form1.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Shape and Form</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/shape and form1.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 101</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/one point perspective.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Vanishing Point - One Point Perspective</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/one point perspective train.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 102</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/two point perspective.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Vanishing Point - Two Point Perspective</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/two point perspective house.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 102</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/three point perspective.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Vanishing Point - Three Point Perspective</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/three point perspective.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 102</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/one point perspective train.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Train - One Point Perspective</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/one point perspective train.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 103</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/two point perspective house.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>House - Two Point Perspective</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/two point perspective house.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 103</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+                <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/three point perspective tower.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Tower - Three Point Perspective</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/three point perspective tower.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 103</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+
+
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/contructing Basic Forms, Division & Multiplication.jpg" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Contructing Basic Forms, Division & Multiplication</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/contructing Basic Forms, Division & Multiplication.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 104</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/Draw Modern House.jpg" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Drawing</span>
+                      <h4>Modern House</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/Draw Modern House.jpg" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 104</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/one point perspectives digital house.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Digital Drawing</span>
+                      <h4>One Point Perspectives House</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/one point perspectives digital house.png" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 105</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/two point perspective digital train.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Digital Drawing</span>
+                      <h4>Two Point Perspective Train</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/two point perspective digital train.png" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 105</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/three point perspective digital tower.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Digital Drawing</span>
+                      <h4>Three Point Perspectives Tower</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/three point perspective digital tower.png" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 105</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/Digital modern house.png" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Digital Drawing</span>
+                      <h4>Modern House</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/Digital modern house.png" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 106</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/own building.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Tinkercad</span>
+                      <h4>Own Building</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/own building.png" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 105</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/Modern House.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Tinkercad</span>
+                      <h4>Modern House</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/Modern House.png" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Activity 106</span>
+                  </div>
+                  <div class="project-year">2026</div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/portfolio/Digital modern house.png" alt="Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Full Stack</span>
+                      <h4>Custom Application</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/Digital modern house.png" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+           
+          
+
+        </div>
+
+      
+
+    </section><!-- /Portfolio Section -->
+
+    
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Marlan</span>
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>info@example.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Marlan</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
